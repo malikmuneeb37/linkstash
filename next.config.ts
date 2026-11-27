@@ -19,6 +19,7 @@ const securityHeaders = [
 
 const nextConfig: NextConfig = {
   output: "export",
+  basePath: process.env.GITHUB_PAGES === "true" ? "/linkstash" : "",
   images: {
     unoptimized: true,
   },
