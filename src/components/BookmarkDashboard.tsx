@@ -47,8 +47,10 @@ export default function BookmarkDashboard() {
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
-    setItems(loadBookmarks());
-    setReady(true);
+    queueMicrotask(() => {
+      setItems(loadBookmarks());
+      setReady(true);
+    });
   }, []);
 
   useEffect(() => {

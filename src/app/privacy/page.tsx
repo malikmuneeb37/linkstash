@@ -48,7 +48,7 @@ export default function PrivacyPage() {
           <h2 className="text-lg font-semibold text-gray-900 dark:text-white">Cookies &amp; third parties</h2>
           <p className="mt-3">
             LinkStash uses no cookies, fingerprinting, or tracking. The only
-            third-party request is to Google's public favicon service for the
+            third-party request is to Google&apos;s public favicon service for the
             small icon tiles; your bookmarks and notes are never sent there. The
             links you open are opened directly in your own browser.
           </p>

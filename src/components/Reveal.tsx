@@ -18,7 +18,7 @@ export default function Reveal({
     const el = ref.current;
     if (!el) return;
     if (!("IntersectionObserver" in window)) {
-      setVisible(true);
+      queueMicrotask(() => setVisible(true));
       return;
     }
     const obs = new IntersectionObserver(
